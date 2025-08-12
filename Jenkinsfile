@@ -19,7 +19,7 @@ pipeline {
                     ls -la
                 '''
             }
-            stage{
+            stage('Test stage'){
                 steps{
                     sh'''
                     echo "TEST STAGE"
