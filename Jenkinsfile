@@ -25,6 +25,7 @@ pipeline {
                 sh'''
                     echo "TEST STAGE"
                     find build -name "index.html"
+                    npm test
 
                 '''
                 }
