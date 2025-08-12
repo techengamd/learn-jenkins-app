@@ -7,8 +7,8 @@ pipeline {
                 docker{
                     image 'node:18-alpine'
                     reuseNode true
+                    }
                 }
-            }
             steps {
                 sh'''
                     ls -la
@@ -19,8 +19,8 @@ pipeline {
                     ls -la
                 '''
             }
-            stage('Test stage'){
-                steps{
+        stage('Test stage'){
+            steps{
                     sh'''
                     echo "TEST STAGE"
                     '''
